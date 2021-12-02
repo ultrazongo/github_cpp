@@ -5,7 +5,7 @@
 
 #include "my_lib.h"
 
-int main(int argc, char **argv)
+auto main(int argc, char **argv) -> int
 {
     cout_hello_world();
     print_linalg_vector();
@@ -54,6 +54,8 @@ int main(int argc, char **argv)
         bool verbose = result["verbose"].as<bool>();
         std::cout << "verbose: " << verbose << std::endl;
     }
+
+    // int a = 22;
 
     return 0;
 }
